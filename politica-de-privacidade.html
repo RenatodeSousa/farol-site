@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Farol</title>
+<style>
+  :root {
+    --ink-900: #070A0F; --ink-800: #0E141C; --ink-600: #1D2833; --ink-500: #2A3947;
+    --text-high: #F3F7FB; --text-mid: #A3B5C6; --text-low: #6B7D8F;
+    --go: #15D98A; --wait: #FFC13D; --info: #4DA3FF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ink-900); color: var(--text-mid);
+    font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.7;
+    margin: 0; padding: 0 20px 80px; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1, h2, .label {
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; color: var(--text-high);
+  }
+  header { padding: 56px 0 28px; }
+  .label {
+    font-size: 11px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--text-low);
+  }
+  h1 { font-size: clamp(30px, 6vw, 44px); font-weight: 800; letter-spacing: -.02em; margin: 12px 0 10px; }
+  h2 { font-size: 21px; font-weight: 700; margin: 44px 0 10px; }
+  p { margin: 0 0 15px; }
+  ul { padding-left: 22px; margin: 0 0 15px; }
+  li { margin-bottom: 8px; }
+  li::marker { color: var(--text-low); }
+  strong { color: var(--text-high); font-weight: 600; }
+  hr { height: 1px; background: var(--ink-500); border: 0; margin: 32px 0; }
+  .box { background: var(--ink-800); border: 1px solid var(--ink-500); border-radius: 16px; padding: 20px 22px; margin: 22px 0; }
+  .box.go { border-color: rgba(21,217,138,.4); }
+  .box.wait { border-color: rgba(255,193,61,.4); }
+  .box h3 {
+    font-family: system-ui, sans-serif; font-size: 15px; font-weight: 800; letter-spacing: .04em;
+    margin: 0 0 8px; color: var(--text-high);
+  }
+  .box.go h3 { color: var(--go); }
+  .box.wait h3 { color: var(--wait); }
+  .box p:last-child { margin-bottom: 0; }
+  a { color: var(--info); text-underline-offset: 3px; }
+  footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--ink-600); font-size: 14px; color: var(--text-low); font-family: system-ui, sans-serif; }
+  code { background: var(--ink-600); padding: 2px 6px; border-radius: 5px; font-size: .9em; color: var(--text-high); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="label">Farol · aplicativo para motoristas</span>
+  <h1>Política de Privacidade</h1>
+  <p>Última atualização: 30 de agosto de 2026</p>
+</header>
+
+<hr>
+
+<p>O <strong>Farol</strong> lê a tela dos aplicativos de corrida no seu celular para calcular
+quanto sobra de verdade em cada oferta e avisar você em voz alta. Esta política explica, sem
+rodeio, quais dados o aplicativo acessa, o que faz com eles e o que sai — ou não sai — do
+seu aparelho.</p>
+
+<div class="box go">
+  <h3>O RESUMO EM UMA FRASE</h3>
+  <p>O Farol <strong>não tem servidor, não tem cadastro e não coleta os seus dados</strong>.
+  Tudo o que ele lê e calcula fica guardado no seu próprio celular, e nós não temos como
+  acessar. Duas funções específicas consultam serviços de terceiros, e elas estão descritas
+  abaixo.</p>
+</div>
+
+<h2>1. O que o aplicativo acessa</h2>
+
+<p>Para funcionar, o Farol usa o <strong>Serviço de Acessibilidade do Android</strong>, uma
+permissão que você concede manualmente e pode revogar quando quiser. Com ela, o aplicativo:</p>
+
+<ul>
+  <li><strong>Lê o conteúdo da tela</strong> dos aplicativos de corrida (Uber e 99) enquanto
+  eles estão em primeiro plano, para localizar a oferta e extrair valor, distâncias, tempos e
+  endereços de embarque e desembarque.</li>
+  <li><strong>Captura a imagem da tela</strong> nesses mesmos momentos, porque em alguns
+  aplicativos a oferta não existe como texto acessível — só como imagem. O reconhecimento de
+  texto acontece <strong>dentro do seu aparelho</strong>, por um modelo que já vem instalado
+  com o aplicativo e funciona sem internet. Essas imagens <strong>não são gravadas nem
+  enviadas</strong>: são descartadas imediatamente após a leitura.</li>
+  <li><strong>Executa toques na tela</strong> para aceitar ou recusar uma oferta — e apenas
+  se você tiver ligado a automação, que vem desligada de fábrica.</li>
+</ul>
+
+<p>O aplicativo só observa quando um aplicativo de corrida está em primeiro plano. Ele não lê
+mensagens, aplicativos de banco, navegador ou qualquer outro conteúdo do seu celular.</p>
+
+<h2>2. O que fica guardado no seu celular</h2>
+
+<ul>
+  <li>Seus <strong>filtros</strong> (valor mínimo, R$/km, R$/hora, distância de coleta).</li>
+  <li>O <strong>custo do seu carro</strong> (preço do combustível, consumo, manutenção).</li>
+  <li>As <strong>zonas</strong> que você marcou para evitar.</li>
+  <li>O <strong>histórico das ofertas avaliadas</strong>, incluindo valores, distâncias e os
+  endereços que apareceram no aplicativo de corrida.</li>
+  <li>O <strong>trajeto da última oferta</strong>, para você poder consultar o destino depois
+  de aceitar — já que o aplicativo de corrida o esconde.</li>
+</ul>
+
+<p>Esses dados ficam na área privada do aplicativo, no seu aparelho.
+<strong>Desinstalar o Farol apaga tudo.</strong></p>
+
+<h2>3. O que usa a internet</h2>
+
+<div class="box wait">
+  <h3>DUAS FUNÇÕES CONSULTAM TERCEIROS</h3>
+  <p><strong>Localização do destino.</strong> Para avisar se o destino de uma oferta cai numa
+  zona que você evita, o Farol precisa transformar o endereço em coordenadas. Ele pede isso
+  ao serviço de localização do próprio Android, que consulta os servidores do Google. Nesse
+  momento, <strong>o endereço de destino é enviado ao Google</strong>, sujeito à política de
+  privacidade deles.</p>
+  <p><strong>Mapa das zonas.</strong> A tela onde você desenha as zonas usa mapas do
+  <strong>OpenStreetMap</strong>, e baixar as imagens do mapa revela a esses servidores a
+  região que você está visualizando.</p>
+  <p>Fora dessas duas situações, o Farol não envia nada pela internet.</p>
+</div>
+
+<h2>4. O que NÃO acontece</h2>
+
+<ul>
+  <li><strong>Não pedimos a senha</strong> da sua conta da Uber ou da 99, e o aplicativo
+  nunca entra nelas. Ele lê o que já está na sua tela, do mesmo jeito que você lê.</li>
+  <li><strong>Não há cadastro, login ou senha</strong> no Farol.</li>
+  <li><strong>Não coletamos</strong> sua localização em segundo plano, sua agenda, seus
+  contatos, suas fotos, seus arquivos ou o conteúdo de outros aplicativos.</li>
+  <li><strong>Não há publicidade</strong> nem rastreadores de terceiros dentro do aplicativo.</li>
+  <li><strong>Não vendemos nem compartilhamos</strong> dados com ninguém — não temos os seus
+  dados para vender.</li>
+</ul>
+
+<h2>5. Pagamento</h2>
+
+<p>A assinatura do Farol é processada pelo <strong>Google Play</strong>. Os dados de
+pagamento são tratados inteiramente pelo Google, sob a política de privacidade deles. O
+aplicativo apenas verifica junto ao Google Play se existe uma assinatura ativa — não temos
+acesso ao seu cartão, ao seu Pix nem aos seus dados financeiros.</p>
+
+<h2>6. Crianças</h2>
+
+<p>O Farol é destinado a motoristas profissionais maiores de 18 anos e não é direcionado a
+crianças.</p>
+
+<h2>7. Seus direitos (LGPD)</h2>
+
+<p>Como o Farol não coleta nem armazena dados pessoais em servidores nossos, não há dados
+sob nossa guarda para acessar, corrigir ou excluir. Todo o conteúdo gerado pelo aplicativo
+está no seu aparelho e sob o seu controle: você pode apagá-lo a qualquer momento limpando os
+dados do aplicativo nas configurações do Android ou desinstalando-o.</p>
+
+<p>Você também pode revogar, a qualquer momento, a permissão de acessibilidade em
+<code>Configurações → Acessibilidade → Farol</code>. Sem ela, o aplicativo deixa de ler
+qualquer tela.</p>
+
+<h2>8. Alterações nesta política</h2>
+
+<p>Se esta política mudar, a data no topo será atualizada e a nova versão ficará neste mesmo
+endereço. Mudanças relevantes na forma como os dados são tratados serão comunicadas dentro
+do próprio aplicativo.</p>
+
+<h2>9. Contato</h2>
+
+<p>Dúvidas sobre privacidade ou sobre esta política:
+<a href="mailto:SEU-EMAIL-AQUI">SEU-EMAIL-AQUI</a>.</p>
+
+<footer>
+  Farol — aplicativo independente, sem vínculo com Uber, 99 ou qualquer plataforma de
+  transporte. As marcas citadas pertencem aos seus respectivos donos.
+</footer>
+
+</div>
+</body>
+</html>
