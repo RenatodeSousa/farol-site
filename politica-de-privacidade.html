@@ -54,7 +54,7 @@
 <header>
   <span class="label">Farol · aplicativo para motoristas</span>
   <h1>Política de Privacidade</h1>
-  <p>Última atualização: 3 de setembro de 2026</p>
+  <p>Última atualização: 8 de setembro de 2026</p>
 </header>
 
 <hr>
@@ -86,9 +86,13 @@ permissão que você concede manualmente e pode revogar quando quiser. Com ela, 
   texto acontece <strong>dentro do seu aparelho</strong>, por um modelo que já vem instalado
   com o aplicativo e funciona sem internet. Essas imagens <strong>não são gravadas nem
   enviadas</strong>: são descartadas imediatamente após a leitura.</li>
-  <li><strong>Executa toques na tela</strong> para aceitar ou recusar uma oferta — e apenas
-  se você tiver ligado a automação, que vem desligada de fábrica.</li>
 </ul>
+
+<p><strong>O Farol não toca na sua tela.</strong> Ele lê e aconselha; quem aceita ou recusa
+a corrida é você. Esta versão sequer <em>pode</em> tocar: a capacidade de executar gestos
+não é declarada no serviço de acessibilidade, e sem ela o próprio Android recusa qualquer
+tentativa. Não é um ajuste que possa ser ligado por engano — é uma capacidade que o
+aplicativo não tem.</p>
 
 <p>O aplicativo só observa quando um aplicativo de corrida está em primeiro plano. Ele não lê
 mensagens, aplicativos de banco, navegador ou qualquer outro conteúdo do seu celular.</p>
@@ -98,7 +102,7 @@ mensagens, aplicativos de banco, navegador ou qualquer outro conteúdo do seu ce
 <ul>
   <li>Seus <strong>filtros</strong> (valor mínimo, R$/km, R$/hora, distância de coleta).</li>
   <li>O <strong>custo do seu carro</strong> (preço do combustível, consumo, manutenção).</li>
-  <li>As <strong>zonas</strong> que você marcou para evitar.</li>
+  <li>As <strong>áreas</strong> que você marcou para evitar.</li>
   <li>O <strong>histórico das ofertas avaliadas</strong>, incluindo valores, distâncias e os
   endereços que apareceram no aplicativo de corrida.</li>
   <li>O <strong>trajeto da última oferta</strong>, para você poder consultar o destino depois
@@ -113,14 +117,25 @@ mensagens, aplicativos de banco, navegador ou qualquer outro conteúdo do seu ce
 <div class="box wait">
   <h3>DUAS FUNÇÕES CONSULTAM TERCEIROS</h3>
   <p><strong>Localização do destino.</strong> Para avisar se o destino de uma oferta cai numa
-  zona que você evita, o Farol precisa transformar o endereço em coordenadas. Ele pede isso
+  área que você evita, o Farol precisa transformar o endereço em coordenadas. Ele pede isso
   ao serviço de localização do próprio Android, que consulta os servidores do Google. Nesse
   momento, <strong>o endereço de destino é enviado ao Google</strong>, sujeito à política de
   privacidade deles.</p>
-  <p><strong>Mapa das zonas.</strong> A tela onde você desenha as zonas usa mapas do
+  <p><strong>Mapa das áreas.</strong> A tela onde você desenha as áreas usa mapas do
   <strong>OpenStreetMap</strong>, e baixar as imagens do mapa revela a esses servidores a
   região que você está visualizando.</p>
   <p>Fora dessas duas situações, o Farol não envia nada pela internet.</p>
+</div>
+
+<div class="box">
+  <h3>O QUILÔMETRO VAZIO NÃO USA A INTERNET</h3>
+  <p>A contagem dos quilômetros que você roda sem passageiro é o único uso de GPS do Farol, e
+  ele é <strong>inteiramente local</strong>. O aplicativo lê a posição do aparelho, calcula a
+  distância entre um ponto e o seguinte, <strong>soma</strong> e joga os pontos fora.</p>
+  <p>O que fica gravado é <strong>um número por dia</strong>: a distância. Nenhuma
+  coordenada, nenhum trajeto, nenhum horário de onde você esteve — é esse mesmo número que
+  aparece no Painel do aplicativo.</p>
+  <p>O recurso é <strong>opcional e vem desligado</strong>.</p>
 </div>
 
 <h2>4. O que NÃO acontece</h2>
@@ -129,8 +144,13 @@ mensagens, aplicativos de banco, navegador ou qualquer outro conteúdo do seu ce
   <li><strong>Não pedimos a senha</strong> da sua conta da Uber ou da 99, e o aplicativo
   nunca entra nelas. Ele lê o que já está na sua tela, do mesmo jeito que você lê.</li>
   <li><strong>Não há cadastro, login ou senha</strong> no Farol.</li>
-  <li><strong>Não coletamos</strong> sua localização em segundo plano, sua agenda, seus
-  contatos, suas fotos, seus arquivos ou o conteúdo de outros aplicativos.</li>
+  <li><strong>Não pedimos localização em segundo plano.</strong> O Farol usa a permissão
+  "durante o uso" e nada além dela. Enquanto você dirige com o aplicativo de corrida na
+  frente, quem mantém a leitura de posição é o serviço em primeiro plano do Farol — aquele
+  da notificação fixa que você vê o turno inteiro. Se a contagem de quilômetro vazio estiver
+  desligada, o aplicativo não pede posição nenhuma.</li>
+  <li><strong>Não coletamos</strong> sua agenda, seus contatos, suas fotos, seus arquivos ou
+  o conteúdo de outros aplicativos.</li>
   <li><strong>Não há publicidade</strong> nem rastreadores de terceiros dentro do aplicativo.</li>
   <li><strong>Não vendemos nem compartilhamos</strong> dados com ninguém — não temos os seus
   dados para vender.</li>
