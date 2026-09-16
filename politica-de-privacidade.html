@@ -54,7 +54,7 @@
 <header>
   <span class="label">Farol · aplicativo para motoristas</span>
   <h1>Política de Privacidade</h1>
-  <p>Última atualização: 8 de setembro de 2026</p>
+  <p>Última atualização: 16 de setembro de 2026</p>
 </header>
 
 <hr>
@@ -66,10 +66,12 @@ seu aparelho.</p>
 
 <div class="box go">
   <h3>O RESUMO EM UMA FRASE</h3>
-  <p>O Farol <strong>não tem servidor, não tem cadastro e não coleta os seus dados</strong>.
-  Tudo o que ele lê e calcula fica guardado no seu próprio celular, e nós não temos como
-  acessar. Duas funções específicas consultam serviços de terceiros, e elas estão descritas
-  abaixo.</p>
+  <p>O Farol <strong>não tem cadastro nem senha</strong>. Se você deixar ligado o
+  <strong>envio de dados para melhorar o app</strong>, ele nos manda o funcionamento do
+  aplicativo, as suas configurações e o histórico das ofertas <strong>sem endereço e sem
+  nome de passageiro</strong> — para corrigir defeitos e ajustar o Farol ao seu jeito de
+  rodar. Com o envio desligado, nada disso sai do seu celular. O que é enviado, e o que nunca
+  é, está na seção 3.</p>
 </div>
 
 <h2>1. O que o aplicativo acessa</h2>
@@ -112,7 +114,54 @@ mensagens, aplicativos de banco, navegador ou qualquer outro conteúdo do seu ce
 <p>Esses dados ficam na área privada do aplicativo, no seu aparelho.
 <strong>Desinstalar o Farol apaga tudo.</strong></p>
 
-<h2>3. O que usa a internet</h2>
+<h2>3. O que o Farol envia para nós</h2>
+
+<p>Na primeira vez que abre o aplicativo, você recebe um <strong>código</strong> (por exemplo
+<code>FRL-A1B2C3</code>) e vê, antes de qualquer envio, para que servem os dados e uma chave
+para ligar ou desligar. <strong>Nada é enviado antes dessa tela.</strong> A chave vem ligada e
+pode ser desligada ali mesmo ou depois, em <code>Ajustes</code>; desligou, o envio para na
+hora.</p>
+
+<p>Com a chave ligada, a cada 15 minutos com internet — e quando você salva uma configuração
+ou pausa o plantão — o Farol envia:</p>
+
+<ul>
+  <li><strong>Seu código e o apelido que você escolheu</strong> — ou, sem apelido, os dois
+  primeiros nomes. O nome completo fica só no celular.</li>
+  <li><strong>O diário de funcionamento do aplicativo</strong>: o que ele leu de cada oferta
+  (valor, distâncias, tempos, categoria), o que decidiu, falhas de leitura e erros. Antes de
+  sair, cada linha passa por um filtro que remove qualquer trecho com cara de endereço.</li>
+  <li><strong>O histórico das ofertas, sem a coluna de endereço</strong>: data e hora,
+  aplicativo, categoria, valor, ganho estimado, distância e tempo até o passageiro e da
+  viagem, o veredito do Farol e se a oferta virou corrida.</li>
+  <li><strong>Os horários em que você esteve online</strong>, medidos pelo que aparece na tela
+  dos aplicativos de corrida: início, fim e em quais aplicativos.</li>
+  <li><strong>Suas configurações</strong>: custo do carro, filtros, preferências de voz e as
+  áreas que você evita — pelo nome que você deu, pelo raio e por um quadrado de cerca de
+  500 metros onde fica o centro, <strong>nunca a coordenada exata</strong>.</li>
+  <li><strong>Dados do aparelho</strong>: modelo, versão do Android e versões do Farol, da
+  Uber e da 99.</li>
+</ul>
+
+<div class="box go">
+  <h3>O QUE NUNCA É ENVIADO</h3>
+  <p>Endereço de embarque ou de destino, nome de passageiro, o texto ou a imagem da tela dos
+  aplicativos de corrida, a sua localização ou o seu trajeto, e o seu nome completo.</p>
+</div>
+
+<p><strong>Para que usamos.</strong> Para corrigir defeitos sem você precisar mandar nada, e
+para conhecer o seu jeito de rodar — em que horários e com que tipo de corrida você ganha
+mais, que valores e distâncias costuma aceitar — e ajustar as sugestões do Farol a você. Não
+usamos para publicidade e não vendemos nem repassamos a ninguém.</p>
+
+<p><strong>Onde fica.</strong> Numa pasta com o seu código, no Google Drive da conta
+<strong>renatossconsultoriaemti@gmail.com</strong>, com envio criptografado (HTTPS). O Google
+armazena esses arquivos como prestador do serviço de armazenamento. Só nós temos acesso à
+pasta. Os dados ficam guardados até você pedir a exclusão (seção 8).</p>
+
+<h2>4. O que usa a internet</h2>
+
+<p>Além do envio descrito acima, quando ligado:</p>
 
 <div class="box wait">
   <h3>DUAS FUNÇÕES CONSULTAM TERCEIROS</h3>
@@ -124,7 +173,8 @@ mensagens, aplicativos de banco, navegador ou qualquer outro conteúdo do seu ce
   <p><strong>Mapa das áreas.</strong> A tela onde você desenha as áreas usa mapas do
   <strong>OpenStreetMap</strong>, e baixar as imagens do mapa revela a esses servidores a
   região que você está visualizando.</p>
-  <p>Fora dessas duas situações, o Farol não envia nada pela internet.</p>
+  <p>Fora dessas duas situações e do envio da seção 3, o Farol não envia nada pela
+  internet. A assinatura é verificada no Google Play (seção 6).</p>
 </div>
 
 <div class="box">
@@ -134,11 +184,11 @@ mensagens, aplicativos de banco, navegador ou qualquer outro conteúdo do seu ce
   distância entre um ponto e o seguinte, <strong>soma</strong> e joga os pontos fora.</p>
   <p>O que fica gravado é <strong>um número por dia</strong>: a distância. Nenhuma
   coordenada, nenhum trajeto, nenhum horário de onde você esteve — é esse mesmo número que
-  aparece no Painel do aplicativo.</p>
+  aparece no Painel do aplicativo. Ele não faz parte do envio.</p>
   <p>O recurso é <strong>opcional e vem desligado</strong>.</p>
 </div>
 
-<h2>4. O que NÃO acontece</h2>
+<h2>5. O que NÃO acontece</h2>
 
 <ul>
   <li><strong>Não pedimos a senha</strong> da sua conta da Uber ou da 99, e o aplicativo
@@ -152,40 +202,49 @@ mensagens, aplicativos de banco, navegador ou qualquer outro conteúdo do seu ce
   <li><strong>Não coletamos</strong> sua agenda, seus contatos, suas fotos, seus arquivos ou
   o conteúdo de outros aplicativos.</li>
   <li><strong>Não há publicidade</strong> nem rastreadores de terceiros dentro do aplicativo.</li>
-  <li><strong>Não vendemos nem compartilhamos</strong> dados com ninguém — não temos os seus
-  dados para vender.</li>
+  <li><strong>Não vendemos nem compartilhamos</strong> os dados enviados com ninguém, e não os
+  usamos para publicidade.</li>
 </ul>
 
-<h2>5. Pagamento</h2>
+<h2>6. Pagamento</h2>
 
 <p>A assinatura do Farol é processada pelo <strong>Google Play</strong>. Os dados de
 pagamento são tratados inteiramente pelo Google, sob a política de privacidade deles. O
 aplicativo apenas verifica junto ao Google Play se existe uma assinatura ativa — não temos
 acesso ao seu cartão, ao seu Pix nem aos seus dados financeiros.</p>
 
-<h2>6. Crianças</h2>
+<h2>7. Crianças</h2>
 
 <p>O Farol é destinado a motoristas profissionais maiores de 18 anos e não é direcionado a
 crianças.</p>
 
-<h2>7. Seus direitos (LGPD)</h2>
+<h2>8. Seus direitos (LGPD)</h2>
 
-<p>Como o Farol não coleta nem armazena dados pessoais em servidores nossos, não há dados
-sob nossa guarda para acessar, corrigir ou excluir. Todo o conteúdo gerado pelo aplicativo
-está no seu aparelho e sob o seu controle: você pode apagá-lo a qualquer momento limpando os
-dados do aplicativo nas configurações do Android ou desinstalando-o.</p>
+<p>O responsável pelos dados enviados é <strong>Renato de Sousa da Silva Consultoria em
+TI</strong>. O envio se baseia no seu <strong>consentimento</strong>, dado na tela do código
+e que você pode retirar a qualquer momento desligando a chave em <code>Ajustes</code>.</p>
+
+<p>Você pode pedir <strong>acesso a uma cópia, correção ou exclusão</strong> do que já foi
+enviado escrevendo para
+<a href="mailto:renatossconsultoriaemti@gmail.com">renatossconsultoriaemti@gmail.com</a> com o
+<strong>seu código</strong>, que aparece em <code>Ajustes</code>. Na exclusão, a pasta inteira
+é apagada, inclusive da lixeira do Drive.</p>
+
+<p>O que fica no celular continua sob o seu controle: você pode apagá-lo limpando os dados
+do aplicativo nas configurações do Android ou desinstalando-o. Desligar o envio ou
+desinstalar <strong>não apaga</strong> o que já foi enviado — para isso, peça a exclusão.</p>
 
 <p>Você também pode revogar, a qualquer momento, a permissão de acessibilidade em
 <code>Configurações → Acessibilidade → Farol</code>. Sem ela, o aplicativo deixa de ler
 qualquer tela.</p>
 
-<h2>8. Alterações nesta política</h2>
+<h2>9. Alterações nesta política</h2>
 
 <p>Se esta política mudar, a data no topo será atualizada e a nova versão ficará neste mesmo
 endereço. Mudanças relevantes na forma como os dados são tratados serão comunicadas dentro
 do próprio aplicativo.</p>
 
-<h2>9. Contato</h2>
+<h2>10. Contato</h2>
 
 <p>Dúvidas sobre privacidade ou sobre esta política:
 <a href="mailto:renatossconsultoriaemti@gmail.com">renatossconsultoriaemti@gmail.com</a>.</p>
